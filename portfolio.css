@@ -1,0 +1,265 @@
+:root {
+    --web_color:#2196F3; 
+    --studio_color:#000;
+    --main_color: #2F303A;
+    --list_color: #757575;
+    --footer_link:rgba(255, 255, 255, 0.6);
+    --team_color: #F5F4FA; 
+    --link_color: #212121;
+    --white_color: #fff;
+    --img_color: #EEEEEE;
+    --border_color: #F5F5F5;
+}
+ 
+ 
+ html {
+   box-sizing: border-box;
+ }
+ 
+ *,
+ *::before,
+ *::after {
+   box-sizing: inherit;
+}
+ 
+ 
+ body {
+   font-family: 'Roboto', sans-serif;
+} 
+ 
+.header {
+   border-bottom: 1px solid var(--border_color);
+}
+.container {
+   width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+
+
+.main-nav {
+   display: flex;
+   align-items: center;
+   background-color: var(--white_color);
+}
+   
+
+.nav-logo, .footer__header {
+   font-family: 'Raleway';
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.19;
+   text-decoration: none; 
+}
+
+.web {
+   color: var(--web_color);
+}
+
+.studio {
+   color: var(--studio_color);
+}
+.footer_studio {
+   color: var(--white_color);
+}
+.list {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+.site-nav {
+   display: flex; 
+   margin-left: 70px;
+}
+.site-nav .item{
+   margin-right: 70px;
+}
+
+.site-nav .item:last-child {
+   margin-right: 0;
+}
+.site-nav li {
+   text-decoration: none;
+}
+
+.address-nav {
+   display: flex;
+   margin-left: auto;
+}
+
+.address-nav li {
+   text-decoration: none;
+}
+
+.address-nav .item + .item {
+   margin-left: 40px;
+}
+
+.site-nav .nav__link {
+   display: block;
+   text-decoration: none;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
+   color: var(--link_color);
+   padding-top: 21px;
+   padding-bottom: 21px;
+}
+
+.nav__link:hover {
+   color: var(--web_color);
+}
+
+.address-nav .address__link {
+   display: block;
+   text-decoration: none;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
+   color: var(--list_color);
+   padding-top: 21px;
+   padding-bottom: 21px;
+}
+
+.address__link:hover {
+   color: var(--web_color);
+}
+
+.section__list {
+   display: flex;
+   justify-content: center;
+}
+
+
+.section__list-items {
+   list-style: none;
+
+}
+
+.btn {
+   background-color: var(--team_color);
+   border-radius: 4px;
+   border: none;
+   padding: 6px 22px;
+   font-family: inherit;
+   font-weight: 500;
+   font-size: 16px;
+   text-align: center;
+   cursor: pointer;
+   color: var(--link_color);
+   margin-right: 10px;
+ }
+ 
+ .btn:hover {
+    background-color: var(--web_color);
+    color: var(--white_color);
+ }
+ 
+ .visually-hidden {
+    position: position;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0 );
+    clip-path: inset(50%);
+    margin: -1px;
+ }
+
+
+.box {
+   width: 1200px;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.section__list {
+   padding-top: 90px;
+   padding-bottom: 35px;
+}
+
+.information {
+   padding-left: 24px;
+   padding-right: 24px;
+}
+
+.section__header {
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 1.8;
+   color: var(--link_color);
+}
+
+.section__text {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.7;
+   color: var(--list_color);
+}
+.section__list-img {
+   list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+
+}
+
+.link__img {
+   border: 1px solid var(--img_color);
+   margin-bottom: 30px;
+}
+
+
+ 
+ .footer {
+   background-color: var(--main_color);
+   padding-top: 60px;
+   padding-bottom: 100px;
+}
+
+.footer__address {
+   font-style: normal;
+}
+
+.footer__list-address, .footer__list {
+   list-style: none;
+}
+
+
+.footer__link-address {
+   color: var(--white_color);
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
+   text-decoration: none;
+   padding-left: 60px;
+   padding-top: 10px;
+}
+
+.footer__link-address:hover {
+   color: var(--web_color);
+}
+
+.footer__link {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
+   color: var(--footer_link);
+   text-decoration: none;
+   padding-left: 60px;
+}
+
+.footer__link:hover {
+   color: var(--web_color);
+}
+
+.footer__header {
+   padding-left: 100px;
+}
